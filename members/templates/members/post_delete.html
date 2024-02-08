@@ -1,0 +1,14 @@
+{% extends '_base.html' %}
+
+{% block page_title %}
+   post delete
+{% endblock page_title %}
+
+{% block content %}
+   <h1>Are you sure?</h1>
+    <p>are you sure{{ members.title }}post permanently</p>
+    <form action="" method="post">
+    {% csrf_token %}
+    <input class = ' class="btn btn-sm btn-info' type="submit" value="yes,delete">
+    </form>
+{% endblock content %}
